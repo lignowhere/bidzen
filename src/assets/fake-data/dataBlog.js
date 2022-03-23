@@ -8,45 +8,45 @@ import img6 from '../images/post/post-6.jpg'
 const dataBlog = [
     {
         img: img1,
-        title: 'An Overview Of Most Common UX Design Deliverables',
+        title: 'Crypto Music là gì & nó cách mạng ngành công nghiệp âm nhạc ra sao?',
         text : '',
-        author: 'Senrew A. Sisson',
-        time: '25 JAN 2022'
+        author: 'Cao Nguyên',
+        time: '25 Thg1 2022'
     },
     {
         img: img2,
-        title: 'An Overview Of Most Common UX Design Deliverables',
+        title: 'Crypto Music là gì & nó cách mạng ngành công nghiệp âm nhạc ra sao?',
         text : '',
-        author: 'Senrew A. Sisson',
-        time: '25 JAN 2022'
+        author: 'Cao Nguyên',
+        time: '25 Thg1 2022'
     },
     {
         img: img3,
-        title: 'An Overview Of Most Common UX Design Deliverables',
+        title: 'Crypto Music là gì & nó cách mạng ngành công nghiệp âm nhạc ra sao?',
         text : '',
-        author: 'Senrew A. Sisson',
-        time: '25 JAN 2022'
+        author: 'Cao Nguyên',
+        time: '25 Thg1 2022'
     },
     {
         img: img4,
-        title: 'An Overview Of Most Common UX Design Deliverables',
+        title: 'Crypto Music là gì & nó cách mạng ngành công nghiệp âm nhạc ra sao?',
         text : '',
-        author: 'Senrew A. Sisson',
-        time: '25 JAN 2022'
+        author: 'Cao Nguyên',
+        time: '25 Thg1 2022'
     },
     {
         img: img5,
-        title: 'An Overview Of Most Common UX Design Deliverables',
+        title: 'Crypto Music là gì & nó cách mạng ngành công nghiệp âm nhạc ra sao?',
         text : '',
-        author: 'Senrew A. Sisson',
-        time: '25 JAN 2022'
+        author: 'Cao Nguyên',
+        time: '25 Thg1 2022'
     },
     {
         img: img6,
-        title: 'An Overview Of Most Common UX Design Deliverables',
+        title: 'Crypto Music là gì & nó cách mạng ngành công nghiệp âm nhạc ra sao?',
         text : '',
-        author: 'Senrew A. Sisson',
-        time: '25 JAN 2022'
+        author: 'Cao Nguyên',
+        time: '25 Thg1 2022'
     },
 ]
 

@@ -7,20 +7,20 @@ export const Newsletters = () => {
         <div className="container">
             <div className="new-letter-inner flex">
                 <div className="new-letter-content">
-                    <h3 className="heading">Newsletters</h3>
-                    <p className="sub-heading">Most popular gaming digital nft market place </p>
+                    <h3 className="heading">Bản tin</h3>
+                    <p className="sub-heading">Nhận thông tin về các sản phẩm NFT mới và các đợt giảm giá </p>
                     <div className="form-subcribe">
                         <form id="subscribe-form" action="#" method="GET" acceptCharset="utf-8"
                             className="form-submit">
                             <input name="email" className="email" type="email"
-                                placeholder="Enter Email Address" required />
+                                placeholder="Địa Chỉ Email Của Bạn" required />
                             <button name="submit" type="submit" id="submit"
-                                className="sc-button style letter style-2"><span>Browse More</span> </button>
+                                className="sc-button style letter style-2"><span>Đăng Ký</span> </button>
                         </form>
                     </div>
                 </div>
                 <div className="new-letter-img">
-                    <img src={img} alt="Bidzen" />
+                    <img src={img} alt="Only One" />
                 </div>
             </div>
         </div>

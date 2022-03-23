@@ -6,21 +6,21 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 const LatestCollections = props => {
     const data = props.data;
     return (
-        <section className="tf-latest-collections tf-section bg-color-2">
+        <section className="latest-collections tf-section bg-color-3">
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
                     <div className="sc-heading style-2">
                         <div className="content-left">
                             <div className="inner">
-                                <h3>Latest Collections</h3>
-                                <p className="desc">Most popular gaming digital nft market place </p>
+                                <h3>Bộ Sưu Tập Mới</h3>
+                                <p className="desc">Các bộ sưu tập NFT mới ra mắt </p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="col-md-12">
-                    <div className="swiper-container latest-coll style-2">
+                    <div className="swiper-container latest-coll">
                         <div className="swiper-wrapper">
                         <Swiper
                             modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -64,22 +64,22 @@ const LatestCollections = props => {
 
 const CollectionsItem = props => (
     <div className="slider-item">
-        <div className="sc-product-item style-4 bg-color-dark">
+        <div className="sc-product-item style-4">
             <div className="product-img flex">
                 <div className="img-left">
-                    <img src={props.item.img} alt="Bidzen" />
+                    <img src={props.item.img} alt="Only One" />
                     <label>{props.item.tags}</label>
                 </div>
                 <div className="img-right">
                     <div className="top-img flex">
                         <img src={props.item.img1}
-                            alt="Bidzen" />
+                            alt="Only One" />
                         <img src={props.item.img2}
-                            alt="Bidzen" />
+                            alt="Only One" />
                     </div>
                     <div className="bottom-img">
                         <img src={props.item.img3}
-                            alt="Bidzen" />
+                            alt="Only One" />
                     </div>
                 </div>
             </div>
@@ -88,11 +88,11 @@ const CollectionsItem = props => (
                 <div className="product-author flex mg-bt-0">
                     <div className="left flex">
                         <div className="avatar">
-                            <img src={props.item.imgAuthor} alt="Bidzen" />
+                            <img src={props.item.imgAuthor} alt="Only One" />
                         </div>
                         <div className="infor">
-                            <div className="author-name"><Link to="/authors">{props.item.name}</Link></div>
-                            <span>Creator</span>
+                            <div className="author-name"><Link to="/creator">{props.item.name}</Link></div>
+                            <span>Nhà sáng tạo</span>
                         </div>
                     </div>
                     <div className="button-wishlish">

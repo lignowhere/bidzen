@@ -63,6 +63,9 @@
     --color-11          : #fff;
     --border-color-2    : rgba(99, 69, 237, 0.12);
     --bg-newletter         : #F9F9F9;
+
+    /* size */
+    --padding-header: 19px;
 }
 
 .is_dark {
@@ -400,8 +403,8 @@
 }
 
 .blog-details .post-title {
-    font-size    : 22px;
-    line-height  : 1.455em;
+    font-size    : 32px;
+    line-height  : 1.4em;
     margin-bottom: 23px;
 }
 
@@ -2166,7 +2169,7 @@ blockquote .author::before {
 #create-item-1 select {
     font-size  : 18px;
     color      : var(--color-1);
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .is_dark #create-item-1 input,
@@ -2481,7 +2484,7 @@ blockquote .author::before {
 }
 
 .slider-inner .slider-content .heading {
-    line-height: 1.07;
+    line-height: 1.15;
     letter-spacing: -2px;
     margin-bottom: 28px;
 }

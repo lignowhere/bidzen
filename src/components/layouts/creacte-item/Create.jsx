@@ -10,51 +10,45 @@ return (
                     <div className="form-create-item-content">
                         <div className="form-create-item">
                             <div className="sc-heading">
-                                <h3>Create Item</h3>
-                                <p className="desc">Most popular gaming digital nft market place </p>
+                                <h3>Tạo NFT Mới</h3>
+                                <p className="desc">Bắt đầu tạo NFT của riêng bạn một cách dễ dàng </p>
                             </div>
                             <form id="create-item-1" action="#" method="GET" acceptCharset="utf-8">
                                 <label className="uploadFile">
-                                    <span className="filename">Choose Item</span>
+                                    <span className="filename">Chọn tập tin</span>
                                     <input type="file" className="inputfile form-control" name="file" />
                                     <span className="icon"><i className="far fa-cloud-upload"></i></span>
                                 </label>
                                 <div className="input-group">
-                                    <input name="name" type="text" placeholder="Item Name" required />
-                                    <input name="number" type="text" placeholder="Item Price"
+                                    <input name="name" type="text" placeholder="Tên NFT" required />
+                                    <input name="number" type="text" placeholder="Giá"
                                         required />
                                 </div>
                                 <div className="input-group">
-                                    <input name="name" type="text" placeholder="Royality" required />
-                                    <input name="number" type="text" placeholder="Size" required />
+                                    <input name="name" type="text" placeholder="Kích Thước (nếu có)" required />
+                                    <input name="number" type="text" placeholder="Phí Bản Quyền" required />
                                 </div>
                                 <div className="input-group">
-                                    <input name="name" type="text" placeholder="Blance" required />
-                                    <input name="number" type="text" placeholder="No Of Copies"
+                                    <input name="name" type="text" placeholder="Danh mục" required />
+                                    <input name="number" type="text" placeholder="Số Lượng"
                                         required />
                                 </div>
                                 <textarea id="comment-message" name="message" tabIndex="4"
-                                    placeholder="Description" aria-required="true"></textarea>
+                                    placeholder="Mô tả" aria-required="true"></textarea>
                                 <div className="input-group style-2 ">
                                     <div className="btn-check">
                                         <input type="radio" id="sale" name="fav_language" />
-                                        <label htmlFor="sale">Put On Sale</label>
-                                    </div>
-                                    <div className="btn-check">
-                                        <input type="radio" id="price" name="fav_language" />
-                                        <label htmlFor="price">
-                                            Instant Sale Price
-                                        </label>
+                                        <label htmlFor="sale">Bán Giá Cố Định</label>
                                     </div>
                                     <div className="btn-check">
                                         <input type="radio" id="purchase" name="fav_language" />
                                         <label htmlFor="purchase">
-                                            Unlock Purchased
+                                        Bán Đấu Giá
                                         </label>
                                     </div>
                                 </div>
                                 <button name="submit" type="submit" id="submit"
-                                    className="sc-button style letter style-2"><span>Create Item</span> </button>
+                                    className="sc-button style letter style-2"><span>Tạo NFT</span> </button>
                             </form>
                         </div>
                         <div className="form-background">

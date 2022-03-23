@@ -18,9 +18,9 @@ const LiveAutions = props => {
                         <div className="inner">
                             <div className="group">
                                 <div className="icon"><i className="ripple"></i></div>
-                                <h3>Live Auctions</h3>
+                                <h3>Đang Đấu Giá</h3>
                             </div>
-                            <p className="desc">Most popular gaming digital nft market place </p>
+                            <p className="desc">Các sản phẩm mới đang được đấu giá trực tiếp </p>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@ const LiveAutionsItem = props => (
                 <div className="avatar-box">
                     {
                         props.item.avtList.map((item,index)=> (
-                            <img key={index} src={item.img1} alt="Bidzen" />
+                            <img key={index} src={item.img1} alt="Only One" />
                         ))
                     }
                 </div>
@@ -89,13 +89,13 @@ const LiveAutionsItem = props => (
 
                         <Dropdown.Menu>
                         <Dropdown.Item href="#">
-                            Refresh Metadata
+                            Cập nhật giá
                         </Dropdown.Item>
                         <Dropdown.Item href="#">
-                            Share
+                            Chia sẻ
                         </Dropdown.Item>
                         <Dropdown.Item href="#">
-                            Report
+                            Báo cáo
                         </Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
@@ -103,24 +103,24 @@ const LiveAutionsItem = props => (
 
             </div>
             <div className="product-img">
-                <img src={props.item.img} alt="Bidzen" />
+                <img src={props.item.img} alt="Only One" />
                 <Link to="/connect-wallet"
-                    className="sc-button style letter"><span>Place Bid</span></Link>
+                    className="sc-button style letter"><span>Đặt Giá</span></Link>
                 <label>{props.item.tags}</label>
             </div>
             <div className="product-content">
                 <h5 className="title"><Link to="/item-details">{props.item.title}</Link> </h5>
                 <div className="product-author flex">
                     <div className="avatar">
-                        <img src={props.item.avt} alt="Bidzen" />
+                        <img src={props.item.avt} alt="Only One" />
                     </div>
                     <div className="infor">
-                        <div className="author-name"><Link to="/authors">{props.item.name}</Link></div>
-                        <span>Creator</span>
+                        <div className="author-name"><Link to="/creator">{props.item.name}</Link></div>
+                        <span>Nhà sáng tạo</span>
                     </div>
                 </div>
                 <div className="product-price">
-                    <div className="title">Current Bid</div>
+                    <div className="title">Giá hiện tại</div>
                     <div className="price">
                         <span>{props.item.price}</span>
                         <span>= {props.item.priceChange}</span>

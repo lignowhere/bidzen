@@ -4,50 +4,53 @@ import img3 from '../images/avatar/avt-3.jpg'
 import img4 from '../images/avatar/avt-4.jpg'
 import img5 from '../images/avatar/avt-5.jpg'
 import img6 from '../images/avatar/avt-6.jpg'
+import img7 from '../images/avatar/avt-7.jpg'
+import img8 from '../images/avatar/avt-8.jpg'
+import img9 from '../images/avatar/avt-9.jpg'
 const dataBestSeller = [
     {
         img: img1,
-        name: 'Jason M. Stalls',
+        name: 'Mỹ Tâm',
         price: '523.7 ETH',
     },
     {
         img: img2,
-        name: 'Frank F. Chan',
+        name: 'Binz',
         price: '523.7 ETH',
     },
     {
         img: img3,
-        name: 'Robert George',
+        name: 'Sơn Tùng MTP',
         price: '523.7 ETH',
     },
     {
         img: img4,
-        name: 'Frank N. Glisson',
+        name: 'Jack',
         price: '523.7 ETH',
     },
     {
         img: img5,
-        name: 'Michel ZonaS',
+        name: 'Thủy Tiên',
         price: '523.7 ETH',
     },
     {
         img: img6,
-        name: 'Mizanur Mango',
+        name: 'H.Thùy Linh',
         price: '523.7 ETH',
     },
     {
-        img: img1,
-        name: 'Jason M. Stalls',
+        img: img7,
+        name: 'Karik',
         price: '523.7 ETH',
     },
     {
-        img: img2,
-        name: 'Frank F. Chan',
+        img: img8,
+        name: 'Wowy',
         price: '523.7 ETH',
     },
     {
-        img: img3,
-        name: 'Robert George',
+        img: img9,
+        name: 'Xèo Chu',
         price: '523.7 ETH',
     }
 

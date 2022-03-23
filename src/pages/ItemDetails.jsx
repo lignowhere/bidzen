@@ -4,38 +4,38 @@ import Header from '../components/header/Header';
 import Countdown from 'react-countdown';
 import { Tab, Tabs, TabList, TabPanel  } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import LiveAution from '../components/layouts/home02/LiveAution';
+import LiveAution from '../components/layouts/home/LiveAution';
 import dataLiveAution from '../assets/fake-data/dataLiveAution'
 import  Newsletters from '../components/layouts/Newsletters';
 import Footer from '../components/footer/Footer';
 
 import img1 from '../assets/images/avatar/avt-6.jpg'
-import img2 from '../assets/images/avatar/avt-2.jpg'
+import img2 from '../assets/images/avatar/avt-5.jpg'
 import img3 from '../assets/images/avatar/avt-4.jpg'
-import imgdetail1 from '../assets/images/product-item/auction-detail.jpg'
-import avt1 from '../assets/images/avatar/avt-4.jpg'
-import avt2 from '../assets/images/avatar/avt-6.jpg'
-import avt3 from '../assets/images/avatar/avt-3.jpg'
+import imgdetail1 from '../assets/images/product-item/item-1.jpg'
+import avt1 from '../assets/images/avatar/avt-18.jpg'
+import avt2 from '../assets/images/avatar/avt-2.jpg'
+import collection1 from '../assets/images/img-collection/collection-14.jpg'
 
 const ItemDetails = () => {
     const [dataHistory] = useState(
         [
             {
                 img: img1,
-                name:"@Johnson",
-                time: "8 hours ago ",
+                name:"@H.ThuyLinh",
+                time: "2 giờ trước ",
                 price: "25 ETH ",
             },
             {
                 img: img2,
-                name:"@Johnson",
-                time: "8 hours ago ",
+                name:"@ThuyTien",
+                time: "3 giờ trước ",
                 price: "25 ETH ",
             },
             {
                 img: img3,
-                name:"@Johnson",
-                time: "8 hours ago ",
+                name:"@Jack97",
+                time: "4 giờ trước ",
                 price: "25 ETH ",
             },
         ]
@@ -49,12 +49,12 @@ const ItemDetails = () => {
                     <div className="col-md-12">
                         <div className="page-title-inner flex">
                             <div className="page-title-heading">
-                                <h2 className="heading">Auctions Details</h2>
+                                <h2 className="heading">Thông Tin Sản Phẩm</h2>
                             </div>
                             <div className="breadcrumbs">
                                 <ul>
-                                    <li><Link to="/">Home</Link></li>
-                                    <li>Auctions Details</li>
+                                    <li><Link to="/">Trang chủ</Link></li>
+                                    <li>Thông tin sản phẩm</li>
                                 </ul>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const ItemDetails = () => {
                         <div className="col-xl-6 col-lg-12 col-md-12">
                             <div className="item-media">
                                 <div className="media">
-                                    <img src={imgdetail1} alt="Bidzen" />
+                                    <img src={imgdetail1} alt="Only One" />
                                 </div>
                                 <div className="countdown style-2">
                                     <Countdown  date={Date.now() + 500000000} />
@@ -77,18 +77,18 @@ const ItemDetails = () => {
                         </div>
                         <div className="col-xl-6 col-lg-12 col-md-12">
                             <div className="content-item">
-                                <h3> Mission For Ghost Fighter</h3>
-                                <p className="mg-bt-42">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-                                    ipsam voluptatem quia voluptas sit aspernatur aut</p>
+                                <h3> Binz - DBMH - Gold 46/50 [Tuniver]</h3>
+                                <p className="mg-bt-42">Song: Don't Break My Heart <br />
+                                                        - 0.24% Revenue Share <br />
+                                                        - Private Live Session and Limited Merch from Binz <br />
+                                                        - Early access to future projects</p>
                                 <div className="author-item">
                                     <div className="avatar">
-                                        <img src={avt1} alt="Bidzen" />
+                                        <img src={avt1} alt="Only One" />
                                     </div>
                                     <div className="infor">
-                                        <div className="create">Owner By</div>
-                                        <h6><Link to="/authors">Duane M. Mendoza</Link> </h6>
+                                        <div className="create">Chủ Sở Hữu</div>
+                                        <h6><Link to="/authors">Lignowhere</Link> </h6>
                                         <div className="widget-social">
                                             <ul>
                                                 <li><Link to="#" className="active"><i className="fab fa-facebook-f"></i></Link>
@@ -101,48 +101,48 @@ const ItemDetails = () => {
                                     </div>
                                 </div>
                                 <ul className="list-details-item">
-                                    <li><span className="name">Current Price 1.5 ETH</span><span
-                                            className="price">$500.89</span> <span className="pagi">1 of 5</span> </li>
-                                    <li>Size 14000 x 14000 px</li>
-                                    <li> Volume Traded 64.1</li>
+                                    <li><span className="name">Giá hiện tại 1.5 ETH</span><span
+                                            className="price">$500.89</span> <span className="pagi">1 trên 5</span> </li>
+                                    <li>Kích thước 14000 x 14000 px</li>
+                                    <li> Khối lượng giao dịch 252</li>
                                 </ul>
                                 <div className="author-bid">
                                     <div className="author-item">
                                         <div className="avatar">
-                                            <img src={avt2} alt="Bidzen" />
+                                            <img src={avt2} alt="Only One" />
                                         </div>
                                         <div className="infor">
-                                            <h6><Link to="/authors">Keith J. Kelley</Link> </h6>
-                                            <div className="create">Creators</div>
+                                            <h6><Link to="/authors">Binz</Link> </h6>
+                                            <div className="create">Nhà sáng tạo</div>
                                         </div>
                                     </div>
                                     <div className="author-item">
                                         <div className="avatar">
-                                            <img src={avt3} alt="Bidzen" />
+                                            <img src={collection1} alt="Only One" />
                                         </div>
                                         <div className="infor">
-                                            <h6><Link to="/authors">David Michels</Link> </h6>
-                                            <div className="create">Collection</div>
+                                            <h6><Link to="/authors">Don't breake my heart</Link> </h6>
+                                            <div className="create">Bộ sưu tập</div>
                                         </div>
                                     </div>
 
                                 </div>
                                 <div className="infor-bid">
                                     <div className="content-left">
-                                        <h6>Highest Bid</h6>
+                                        <h6>Giá Cao Nhất</h6>
                                         <div className="price">9.3 BNB</div>
                                     </div>
-                                    <div className="pagi">1 Of 9</div>
+                                    <div className="pagi">1 trên 9</div>
                                 </div>
                                 <Link to="/connect-wallet"
-                                    className="sc-button style letter style-2 style-item-details"><span>Place Bid</span>
+                                    className="sc-button style letter style-2 style-item-details"><span>Trả Giá</span>
                                 </Link>
                                 <div className="flat-tabs themesflat-tabs">
                                 <Tabs>
                                         <TabList>
-                                        <Tab>Bid</Tab>
-                                        <Tab>History</Tab>
-                                        <Tab>Details</Tab>
+                                        <Tab>Đấu giá</Tab>
+                                        <Tab>Lịch sử</Tab>
+                                        <Tab>Thông tin</Tab>
                                         </TabList>
 
                                         <TabPanel>
@@ -153,12 +153,12 @@ const ItemDetails = () => {
                                                         <div className="content">
                                                             <div className="author-item">
                                                                 <div className="avatar">
-                                                                    <img src={item.img} alt="Bidzen" />
+                                                                    <img src={item.img} alt="Only One" />
                                                                 </div>
                                                                 <div className="infor">
-                                                                    <p>Bid listed for <span className="status">{item.price}</span> 
+                                                                    <p>Đang được trả giá <span className="status">{item.price}</span> 
                                                                     {item.time}
-                                                                        by <span className="creator">{item.name}</span> </p>
+                                                                        bởi <span className="creator">{item.name}</span> </p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -173,12 +173,12 @@ const ItemDetails = () => {
                                                     <div className="content">
                                                         <div className="author-item">
                                                             <div className="avatar">
-                                                                <img src={img1} alt="Bidzen" />
+                                                                <img src={avt2} alt="Only One" />
                                                             </div>
                                                             <div className="infor">
-                                                                <p>Bid listed for <span className="status">25 ETH 8</span>
-                                                                    hours ago
-                                                                    by <span className="creator">@Johnson</span> </p>
+                                                                <p>Được đúc với giá <span className="status">25 ETH </span>
+                                                                    8 giờ trước
+                                                                    bởi <span className="creator">@Tuniver_Binz</span> </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -187,18 +187,10 @@ const ItemDetails = () => {
                                         </TabPanel>
                                         <TabPanel>
                                             <div className="provenance">
-                                                <p>lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry.
-                                                    Lorem Ipsum has been the industry's standard dummy text ever since
-                                                    the 1500s,
-                                                    when an unknown printer took a galley of type and scrambled it to
-                                                    make a type specimen book.
-                                                    It has survived not only five centuries, but also the leap into
-                                                    electronic typesetting,
-                                                    remaining essentially unchanged. It was popularised in the 1960s
-                                                    with the release of Letraset sheets containing Lorem Ipsum passages,
-                                                    and more recently with desktop publishing software like Aldus
-                                                    PageMaker including versions of Lorem Ipsum.</p>
+                                                <p>Ca khúc “Don’t Break My Heart” được Binz sáng tác từ năm 2020. 
+                                                    Bên cạnh phần âm nhạc do nhà sản xuất Touliver chịu trách nhiệm, 
+                                                    sản phẩm lần này còn có sự hỗ trợ bởi các thành viên khác của SpaceSpeakers 
+                                                    bao gồm đạo diễn Kiên Ứng, ca sĩ SOOBIN và rapper 16 Typh.  </p>
                                             </div>
                                         </TabPanel>
                                     </Tabs>

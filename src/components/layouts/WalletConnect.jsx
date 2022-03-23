@@ -16,55 +16,55 @@ const WalletConnect = () => {
             {
                 img: img1,
                 title: 'Meta Mask',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+                text: 'Kết nối với ví Meta Mask của bạn chỉ với một cú click chuột nhanh chóng',
                 class: ''
             },
             {
                 img: img2,
                 title: 'Bitski',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+                text: 'Kết nối với ví Bitski của bạn chỉ với một cú click chuột nhanh chóng',
                 class: ''
             },
             {
                 img: img3,
                 title: 'Fortmatic',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+                text: 'Kết nối với ví Bitski của bạn chỉ với một cú click chuột nhanh chóng',
                 class: ''
             },
             {
                 img: img4,
                 title: 'Wallet Connect',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+                text: 'Kết nối với ví Wallet Connect của bạn chỉ với một cú click chuột nhanh chóng',
                 class: ''
             },
             {
                 img: img5,
                 title: 'Coinbase Wallet',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+                text: 'Kết nối với ví Coinbase Wallet của bạn chỉ với một cú click chuột nhanh chóng',
                 class: ''
             },
             {
                 img: img6,
                 title: 'Authereum',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+                text: 'Kết nối với ví Authereum của bạn chỉ với một cú click chuột nhanh chóng',
                 class: ''
             },
             {
                 img: img7,
                 title: 'kaikas',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+                text: 'Kết nối với ví kaikas của bạn chỉ với một cú click chuột nhanh chóng',
                 class: 'mg-bt-0'
             },
             {
                 img: img8,
                 title: 'Torus',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+                text: 'Kết nối với ví Torus của bạn chỉ với một cú click chuột nhanh chóng',
                 class: 'mg-bt-0'
             },
             {
                 img: img9,
                 title: 'Bitcoin',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,',
+                text: 'Kết nối với ví Bitcoin của bạn chỉ với một cú click chuột nhanh chóng',
                 class: 'mg-bt-0'
             },
         ]
@@ -75,8 +75,8 @@ return (
             <div className="row">
                 <div className="col-md-12">
                     <div className="sc-heading">
-                        <h3>Wallet- Connect</h3>
-                        <p className="desc">Most popular gaming digital nft market place </p>
+                        <h3>Kết Nối Ví</h3>
+                        <p className="desc">Chúng tôi hỗ trợ hầu hết các ví Crypto phổ biến hiện nay </p>
                     </div>
                 </div>
                 {
@@ -84,7 +84,7 @@ return (
                         <div key={index} className="col-lg-4 col-md-4">
                             <div className={`sc-wallet ${item.class}`}>
                                 <div className="icon">
-                                    <img src={item.img} alt="Bidzen" />
+                                    <img src={item.img} alt="Only One" />
                                 </div>
                                 <div className="content">
                                     <h4><Link to="/login">{item.title}</Link></h4>

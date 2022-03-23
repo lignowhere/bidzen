@@ -9,8 +9,8 @@ const LatestCollection = props => {
         <div className="row">
             <div className="col-md-12">
                 <div className="sc-heading">
-                    <h3>Our Latest Collections</h3>
-                    <p className="desc">Most popular gaming digital nft market place </p>
+                    <h3>Bộ Sưu Tập Mới Nhất</h3>
+                    <p className="desc">Các bộ sưu tập NFT vừa mới được sáng tạo nên </p>
                 </div>
             </div>
             {
@@ -40,9 +40,9 @@ const LatestCollection = props => {
                                         <img src={item.imgAuthor} alt="Bidzen" />
                                     </div>
                                     <div className="infor">
-                                        <div className="author-name"><Link to="/authors">{item.name}</Link>
+                                        <div className="author-name"><Link to="/creator">{item.name}</Link>
                                         </div>
-                                        <span>Creator</span>
+                                        <span>Nhà sáng tạo</span>
                                     </div>
                                 </div>
                                 <div className="button-wishlish">

@@ -13,12 +13,12 @@ const BestSeller = props => {
                     <div className="sc-heading style-2">
                         <div className="content-left">
                             <div className="inner">
-                                <h3>Best Sellers</h3>
-                                <p className="desc">Most popular gaming digital nft market place </p>
+                                <h3>Danh Sách Nhà Sáng Tạo</h3>
+                                <p className="desc">Only One đã có mặt hầu hết các nghệ sĩ nổi tiếng thuộc nhiều lĩnh vực khác nhau </p>
                             </div>
                         </div>
                         <div className="content-right">
-                            <Link to="/explore-01" className="sc-button style letter style-2"><span>Explore More</span> </Link>
+                            <Link to="/explore" className="sc-button style letter style-2"><span>Xem Thêm</span> </Link>
                         </div>
                     </div>
                 </div>
@@ -53,10 +53,10 @@ const BestSeller = props => {
                                         <div className="slider-item">
                                             <div className="sc-author">
                                                 <div className="card-avatar">
-                                                    <img src={item.img} alt="Bidzen" />
+                                                    <img src={item.img} alt="Only One" />
                                                 </div>
                                                 <div className="infor">
-                                                    <h6> <Link to="/authors">{item.name}</Link> </h6>
+                                                    <h6> <Link to="/creator">{item.name}</Link> </h6>
                                                     <div className="details">{item.price}</div>
                                                 </div>
                                                 <Link to="/login" className="sc-button btn-bordered-white"><span>Follow</span></Link>

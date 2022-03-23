@@ -22,28 +22,28 @@ const FooterStyle2 = () => {
 
     const [dataLinkMarket] = useState([
         {
-            title: 'Gaming',
+            title: 'Tất cả NFT',
+            link: '/explore'
+        },
+        {
+            title: 'Từ Thiện',
             link: '/item'
         },
         {
-            title: 'Product',
+            title: 'Âm Nhạc',
             link: '/item'
         },
         {
-            title: 'All NFTs',
+            title: 'Video',
             link: '/item'
         },
         {
-            title: 'Social Network',
+            title: 'Tranh Ảnh',
             link: '/item'
         },
         {
-            title: 'Domain Names',
-            link: '/item'
-        },
-        {
-            title: 'Collectibles',
-            link: '/item'
+            title: 'Về Only One',
+            link: '/contact'
         },
     ])
 
@@ -96,7 +96,7 @@ const FooterStyle2 = () => {
                         </div>
                         <div className="col-lg-2 col-md-12 col-12">
                             <div className="widget-social style-2">
-                                <h5 className="title-widget">Follow Us</h5>
+                                <h5 className="title-widget">Theo Dõi</h5>
                                 <ul>
                                 {
                                     dataSocial.map((item,index)=> (
@@ -112,8 +112,8 @@ const FooterStyle2 = () => {
             <div className="bottom">
                 <div className="container">
                     <div className="bottom-inner">
-                        Copyright © 2022 Bidzen | NFT Marketplace React Js Template. Designed by <a
-                            href="https://themeforest.net/user/themesflat/portfolio"> Themesflat</a>
+                        Copyright © 2022 Only One | Sàn giao dịch NFT lớn nhất tại Việt Nam. Thiết kế bởi <a
+                            href="https://otis.report"> Otis Team</a>
                     </div>
                 </div>
             </div>

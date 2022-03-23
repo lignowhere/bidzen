@@ -41,6 +41,14 @@ const Header = () => {
         setActiveIndex(index); 
     };
 
+    const menuDetail = menus.map((data, index) => (
+        <li key={index} onClick={()=> handleOnClick(index)} className={`menu-item menu-item-has-children ${activeIndex === index ? 'active' : ''} ` }   >
+            <Link to={data.links}>{data.name}</Link>
+            
+        </li>
+    ))
+    console.log(menuDetail)
+
     return <div>
       <TopBar />
       <header id="header_main" className="header_1 js-header" ref={headerRef}>
@@ -52,13 +60,13 @@ const Header = () => {
                             <div id="site-logo" className="clearfix">
                                 <div id="site-logo-inner">
                                     <Link to="/" rel="home" className="main-logo">
-                                        <img id="logo_header" className='logo-dark' src={logo} srcSet={logo2x} alt="nft-gaming" />
-                                        <img id="logo_header" className='logo-light' src={logolight} srcSet={logolight2x} alt="nft-gaming" />
+                                        <img id="logo_header" className='logo-dark' src={logo} srcSet={logo2x} alt="Only One" />
+                                        <img id="logo_header" className='logo-light' src={logolight} srcSet={logolight2x} alt="Only One" />
                                     </Link>
                                 </div>
                             </div>
                             <form className="form-search">
-                                <input type="text" placeholder="Search here" />
+                                <input type="text" placeholder="Tìm sản phẩm" />
                                 <button><i className="far fa-search"></i></button>
                             </form>
 
@@ -66,9 +74,10 @@ const Header = () => {
                                 <ul id="menu-primary-menu" className="menu">
                                     {
                                         menus.map((data,index) => (
-                                            <li key={index} onClick={()=> handleOnClick(index)} className={`menu-item menu-item-has-children ${activeIndex === index ? 'active' : ''} ` }   >
-                                                <Link to="#">{data.name}</Link>
-                                                <ul className="sub-menu" >
+                                            <li key={index} onClick={()=> handleOnClick(index)} className={`menu-item ${!data.namesub === false ? 'menu-item-has-children' : ''} ${activeIndex === index ? 'active' : ''} ` }   >
+                                                <Link to={data.links}>{data.name}</Link>
+                                               
+                                                { !data.namesub === false ? <ul className="sub-menu" >
                                                     {
                                                         data.namesub.map((submenu,index) => (
                                                             <li key={index} className={
@@ -78,7 +87,7 @@ const Header = () => {
                                                                 }><Link to={submenu.links}>{submenu.sub}</Link></li>
                                                         ))
                                                     }
-                                                </ul>
+                                                </ul> : ''}
                                             </li>
                                         ))
                                     }
@@ -87,7 +96,7 @@ const Header = () => {
                             <div className="button-connect-wallet">
                                 <Link to="/connect-wallet" className="sc-button wallet  style-2">
                                     <img src={icon} alt="icon" />
-                                    <span>Connect Wallet</span>
+                                    <span>Kết Nối Ví</span>
                                 </Link>
                             </div>
 

@@ -1,45 +1,75 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { Dropdown } from 'react-bootstrap';
 
 const BestSeller = props => {
     const data = props.data;
-  return (
-    <section className="tf-best-seller">
-        <div className="best-seller-inner">
-            <div className="row">
-                <div className="col-md-12">
-                    <div className="sc-heading style-2">
-                        <div className="content-left">
-                            <div className="inner">
-                                <h3>Best Sellers</h3>
-                                <p className="desc">Most popular gaming digital nft market place </p>
+    return (
+        <section className="top-seller tf-section">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="sc-heading style-2">
+                            <div className="content-left">
+                                <div className="inner">
+                                    <h3>Nhà Sáng Tạo Hàng Đầu</h3>
+                                    <p className="desc">Những nhà sáng tạo nội dung phổ biến được yêu thích nhất </p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="content-right">
-                            <Link to="/explore-01" className="sc-button style letter style-2"><span>Explore More</span> </Link>
+                            <div className="content-right">
+                            <Dropdown>
+                                <Dropdown.Toggle className="btn-selector nolink" id="dropdown-basic">
+                                    <span>Từ trước đến nay</span>
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                <Dropdown.Item href="#">
+                                    <span>Từ trước đến nay</span>
+                                </Dropdown.Item>
+                                <Dropdown.Item href="#">
+                                    <span>1 ngày</span>
+                                </Dropdown.Item>
+                                <Dropdown.Item href="#">
+                                    <span>1 tuần</span>
+                                </Dropdown.Item>
+                                <Dropdown.Item href="#">
+                                    <span>1 tháng</span>
+                                </Dropdown.Item>
+
+                                </Dropdown.Menu>
+                            </Dropdown>
+                            </div>
                         </div>
                     </div>
-                </div>
-                {
-                    data.slice(0,6).map((item,index) => (
-                        <div key={index} className="col-lg-2 col-md-4 col-6">
-                            <div className="sc-author">
-                                <div className="card-avatar">
-                                    <img src={item.img} alt="Bidzen" />
+                    {
+                        data.slice(0,6).map((item,index) => (
+                            <div key={index} className="col-xl-4 col-lg-6 col-md-6">
+                                <div className="sc-author style-2">
+                                    <div className="card-avatar">
+                                        <img src={item.img} alt="Only One" />
+                                    </div>
+                                    <div className="infor">
+                                        <h5><Link to="/creator">{item.name}</Link></h5>
+                                        <div className="details">{item.price}</div>
+                                        <ul className="rating">
+                                            <li><i className="fas fa-star"></i></li>
+                                            <li><i className="fas fa-star"></i></li>
+                                            <li><i className="fas fa-star"></i></li>
+                                            <li><i className="fas fa-star"></i></li>
+                                            <li className="un-rate"><i className="fas fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div className="button-follow">
+                                        <Link to="/login" className="sc-button style-2"><span>Follow</span></Link>
+                                    </div>
                                 </div>
-                                <div className="infor">
-                                    <h6> <Link to="/authors">{item.name}</Link> </h6>
-                                    <div className="details">{item.price}</div>
-                                </div>
-                                <Link to="/login" className="sc-button btn-bordered-white"><span>Follow</span></Link>
                             </div>
-                        </div>
-                    ))
-                }
+                        ))
+                    }
+                </div>
             </div>
-        </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default BestSeller;

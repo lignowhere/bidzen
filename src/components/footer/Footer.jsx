@@ -24,54 +24,54 @@ const Footer = () => {
 
     const [dataLinkMarket] = useState([
         {
-            title: 'Gaming',
-            link: '/item'
+            title: 'Giới thiệu',
+            link: '/contact'
         },
         {
-            title: 'Product',
-            link: '/item'
+            title: 'Tuyển Dụng',
+            link: '/contact'
         },
         {
-            title: 'All NFTs',
-            link: '/item'
+            title: 'Điều Khoản',
+            link: '/blog-details'
         },
         {
-            title: 'Social Network',
-            link: '/item'
+            title: 'Bảo Mật',
+            link: '/blog-details'
         },
         {
-            title: 'Domain Names',
-            link: '/item'
+            title: 'Bản Quyền',
+            link: '/blog-details'
         },
         {
-            title: 'Collectibles',
-            link: '/item'
+            title: 'Truyền Thông',
+            link: '/blog-details'
         },
     ])
 
     const [dataSupport] = useState([
         {
-            title: 'Setting & Privacy',
+            title: 'Trung Tâm Trợ Giúp',
             link: '/contact'
         },
         {
-            title: 'Help & Support',
+            title: 'Hướng Dẫn Mua Hàng',
             link: '/contact'
         },
         {
-            title: 'Live Auctions',
-            link: '/item'
+            title: 'Hướng Dẫn Bán Hàng',
+            link: '/blog-details'
         },
         {
-            title: 'Item Details',
-            link: '/item-details'
+            title: 'Thanh Toán',
+            link: '/blog-details'
         },
         {
-            title: '24/7 Supports',
+            title: 'Tiếp Thị Liên Kết',
             link: '/contact'
         },
         {
-            title: 'Blog',
+            title: 'Only One Blog',
             link: '/blog'
         },
     ])
@@ -79,13 +79,13 @@ const Footer = () => {
     const [dataRecent] = useState([
         {
             img: img1,
-            title: 'Roll Out New Features Without Hurting Loyal Users',
-            time: '25 JAN 2022',
+            title: 'NFT đang thay đổi ngành nghệ thuật như thế nào?',
+            time: '25 Thg2 2022',
         },
         {
             img: img2,
-            title: 'An Overview The Most Comon UX Design Deliverables',
-            time: '25 JAN 2022',
+            title: 'NFT đang thay đổi mọi thứ nhưng liệu có được xây dựng để đi đến cùng?',
+            time: '25 Thg2 2022',
         },
     ])
 
@@ -124,8 +124,7 @@ const Footer = () => {
                                             srcSet={logo2x} />
                                     </Link>
                                 </div>
-                                <p className="sub-widget-logo">Sed ut perspiciatis unde omnis iste natus error sit voluptate
-                                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quaes</p>
+                                <p className="sub-widget-logo">Only One là sàn NFT đầu tiên và lớn nhất tại Việt Nam. Với mục tiêu giúp mọi người có thể tiếp cận NFT một cách đơn giản và nhanh chóng nhất</p>
                                 <div className="widget-social">
                                     <ul>
                                         {
@@ -139,7 +138,7 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-2 col-md-6 col-sm-6 col-6">
                             <div className="widget widget-menu menu-marketplace">
-                                <h5 className="title-widget">Marketplace</h5>
+                                <h5 className="title-widget">Only One</h5>
                                 <ul>
                                     {
                                         dataLinkMarket.map((item,index)=> (
@@ -151,7 +150,7 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div className="widget widget-menu menu-supports">
-                                <h5 className="title-widget">Supports</h5>
+                                <h5 className="title-widget">Chăm Sóc KH</h5>
                                 <ul>
                                     {
                                         dataSupport.map((item,index)=> (
@@ -163,7 +162,7 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 col-12">
                             <div className="widget widget-post">
-                                <h5 className="title-widget">News & Post</h5>
+                                <h5 className="title-widget">Tin Tức</h5>
                                 <ul className="post-new">
                                     {
                                         dataRecent.map((item,index)=> (
@@ -188,8 +187,8 @@ const Footer = () => {
             <div className="bottom">
                 <div className="container">
                     <div className="bottom-inner">
-                        Copyright © 2022 Bidzen | NFT Marketplace React Js Template. Designed by <a
-                            href="https://themeforest.net/user/themesflat/portfolio"> Themesflat</a>
+                    Copyright © 2022 Only One | Sàn giao dịch NFT lớn nhất tại Việt Nam. Thiết kế bởi <a
+                            href="https://otis.report"> Otis Team</a>
                     </div>
                 </div>
             </div>

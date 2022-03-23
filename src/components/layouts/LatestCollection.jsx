@@ -9,8 +9,8 @@ const LatestCollection = props => {
         <div className="row">
             <div className="col-md-12">
                 <div className="sc-heading">
-                    <h3>Our Creators</h3>
-                    <p className="desc">Most popular gaming digital nft market place </p>
+                    <h3>Bộ Sưu Tập</h3>
+                    <p className="desc">Bộ sưu tập của các nhà sáng tạo hàng đầu trên Only One</p>
                 </div>
             </div>
             {
@@ -19,16 +19,16 @@ const LatestCollection = props => {
                     <div className="sc-product-item style-4">
                         <div className="product-img flex">
                             <div className="img-left">
-                                <img src={item.img} alt="Bidzen" />
+                                <img src={item.img} alt="Only One" />
                                 <label>{item.tags}</label>
                             </div>
                             <div className="img-right">
                                 <div className="top-img flex">
-                                    <img src={item.img1} alt="Bidzen" />
-                                    <img src={item.img2} alt="Bidzen" />
+                                    <img src={item.img1} alt="Only One" />
+                                    <img src={item.img2} alt="Only One" />
                                 </div>
                                 <div className="bottom-img">
-                                    <img src={item.img3} alt="Bidzen" />
+                                    <img src={item.img3} alt="Only One" />
                                 </div>
                             </div>
                         </div>
@@ -37,12 +37,12 @@ const LatestCollection = props => {
                             <div className="product-author flex mg-bt-0">
                                 <div className="left flex">
                                     <div className="avatar">
-                                        <img src={item.imgAuthor} alt="Bidzen" />
+                                        <img src={item.imgAuthor} alt="Only One" />
                                     </div>
                                     <div className="infor">
-                                        <div className="author-name"><Link to="/authors">{item.name}</Link>
+                                        <div className="author-name"><Link to="/creator">{item.name}</Link>
                                         </div>
-                                        <span>Creator</span>
+                                        <span>Nhà sáng tạo</span>
                                     </div>
                                 </div>
                                 <div className="button-wishlish">

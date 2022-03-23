@@ -9,8 +9,8 @@ import avt4 from '../images/avatar/avt-11.jpg'
 
 const dataSlider2 = [
     {
-        title: "Discover and collect your favorite digital NTFs",
-        description: "Quis autem vel eum iure reprehenderit qui in ea voluptates esse quam nihil molestiae consequatur veillum",
+        title: "Khám phá & thu thập các NFT yêu thích của bạn",
+        description: "Cùng Only One khám phá các nội dung sáng tạo hàng đầu từ các nghệ sĩ mà bạn yêu thích hiện nay",
         img1: img1,
         img2: img2,
         img3: img3,
@@ -20,8 +20,8 @@ const dataSlider2 = [
         avt4: avt4,
     },
     {
-        title: "Discover and collect your favorite digital NTFs",
-        description: "Quis autem vel eum iure reprehenderit qui in ea voluptates esse quam nihil molestiae consequatur veillum",
+        title: 'Xem ngay NFT mới ra mắt "Don\'t Breake My Heart"',
+        description: "Cùng Only One khám phá các nội dung sáng tạo hàng đầu từ các nghệ sĩ mà bạn yêu thích hiện nay",
         img1: img1,
         img2: img2,
         img3: img3,

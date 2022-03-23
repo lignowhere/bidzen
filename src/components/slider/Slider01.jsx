@@ -47,7 +47,7 @@ const SliderItem = props => (
                             </div>
                         </div>
                         <div className="slider-img">
-                            <div className="img-home-1"><img src={props.item.img} alt="Bidzen" /></div>
+                            <div className="img-home-1"><img src={props.item.img} alt="Only One" /></div>
                         </div>
                     </div>
                 </div>

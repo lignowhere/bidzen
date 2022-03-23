@@ -10,7 +10,7 @@ import imgpost2 from '../assets/images/post/post-recent-new-2.jpg'
 import imgpost3 from '../assets/images/post/post-recent-new-3.jpg'
 import imgpost4 from '../assets/images/post/post-related-new-1.jpg'
 import imgpost5 from '../assets/images/post/post-related-new-2.jpg'
-import avt from '../assets/images/avatar/avt-12.jpg'
+import avt from '../assets/images/avatar/avt-23.png'
 import avt1 from '../assets/images/avatar/avt-13.jpg'
 import avt2 from '../assets/images/avatar/avt-14.jpg'
 import avt3 from '../assets/images/avatar/avt-15.jpg'
@@ -20,11 +20,11 @@ const BlogDetails = () => {
     const [dataCategory] = useState(
         [
             {
-                name: 'Bitcoin',
+                name: 'Blockchain',
                 count: '5'
             },
             {
-                name: 'Blockchain',
+                name: 'Metaverse',
                 count: '8'
             },
             {
@@ -32,19 +32,19 @@ const BlogDetails = () => {
                 count: '3'
             },
             {
-                name: 'Cryptocurrency',
+                name: 'Tin Tức',
                 count: '2'
             },
             {
-                name: 'ICO',
+                name: 'Tuyển Dụng',
                 count: '4'
             },
             {
-                name: 'News',
+                name: 'Thông Báo',
                 count: '5'
             },
             {
-                name: 'Uncategorized',
+                name: 'Hướng Dẫn',
                 count: '2'
             },
         ]
@@ -53,18 +53,18 @@ const BlogDetails = () => {
         [
             {
                 img: imgpost1,
-                time: ' 05 Jan 2022',
-                title: 'An Overview Of The Most Common UX Design ',
+                time: ' 05 Thg2 2022',
+                title: 'Liệu Metaverse có thay thế các công ty truyền thống? ',
             },
             {
                 img: imgpost2,
-                time: ' 05 Jan 2022',
-                title: 'An Overview Of The Most Common UX Design ',
+                time: ' 01 Thg2 2022',
+                title: 'Đổi thưởng trong GameFi: Cơ chế kiếm tiền được thiết kế trong game ',
             },
             {
                 img: imgpost3,
-                time: ' 05 Jan 2022',
-                title: 'An Overview Of The Most Common UX Design ',
+                time: ' 13 Thg1 2022',
+                title: 'Tại sao vé hòa nhạc có thể là trường hợp sử dụng rộng rãi tiếp theo cho NFT? ',
             },
         ]
     )
@@ -72,32 +72,32 @@ const BlogDetails = () => {
         [
             {
                 img:imgpost4,
-                title: 'Comprensive Guides Server Push Design Feature',
-                time: ' 05 Jan 2022'
+                title: 'Crypto Music là gì và nó cách mạng hóa ngành công nghiệp âm nhạc ra sao?',
+                time: ' 05 Thg1 2022'
             },
             {
                 img:imgpost5,
-                title: 'Comprensive Guides Server Push Design Feature',
-                time: ' 05 Jan 2022'
+                title: 'NFT đang thay đổi ngành nghệ thuật như thế nào?',
+                time: ' 05 Thg1 2022'
             },
         ]
     )
     const [dataTags] = useState(
         [
             {
-                name: 'Crypto',
+                name: 'Bored Ape',
                 active: 'active'
             },
             {
-                name: 'Bitcoin',
+                name: 'Crypto Punk',
                 active: ''
             },
             {
-                name: 'Landing',
+                name: 'Metaverse',
                 active: ''
             },
             {
-                name: 'Digital',
+                name: 'Otis Report',
                 active: ''
             },
             {
@@ -110,23 +110,23 @@ const BlogDetails = () => {
         [
             {
                 img: avt1,
-                name: 'Matthew A. Larrison',
-                time: '25 January 2022',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae',
+                name: 'Hoàng Tôn',
+                time: '25 Tháng 2 2022',
+                text: 'Nội dung quá hay,rất chú trọng đến nội dung thực tế. Tuy nhiên có kha khá clip với nội dung khá ngắn, mình nghĩ nên gộp lại sẽ tốt hơn.',
                 class:''
             },
             {
                 img: avt2,
-                name: 'Joshua S. Flores',
-                time: '25 January 2022',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae',
+                name: 'Phong Lê',
+                time: '25 Tháng 2 2022',
+                text: 'Bài viết có nội dung khá là phức tạp và khó hiểu, tuy nhiên thông điệp truyền tải như vậy là tốt rồi.',
                 class:'reply-comment'
             },
             {
                 img: avt3,
-                name: 'Daniel C. Stackhouse',
-                time: '25 January 2022',
-                text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae',
+                name: 'Hiền Hồ',
+                time: '25 Tháng 2 2022',
+                text: 'Rất hay. Giúp mình hiểu được tại sao trước đây dù có giật chồng nhưng sau lại mất hết. Mình đã hiểu và rút ra được nhiều kiến thức rất bổ ích.',
                 class:''
             },
         ]
@@ -134,7 +134,7 @@ const BlogDetails = () => {
 
   return <div>
     <Header />
-    <section className="fl-page-title">
+    {/* <section className="fl-page-title">
         <div className="overlay"></div>
         <div className="container">
             <div className="row">
@@ -153,7 +153,7 @@ const BlogDetails = () => {
                 </div>
             </div>
         </div>
-    </section>
+    </section> */}
 
     <div className="tf-section post-details">
         <div className="container">
@@ -161,63 +161,57 @@ const BlogDetails = () => {
                 <div className="col-lg-8 col-md-12">
                     <article className="blog-details">
                         <div className="post-media">
-                            <img src={img1} alt="Bidzen" />
+                            <img src={img1} alt="Only One" />
                             <div className="meta">
                                 <div className="item author">
-                                    <Link to="#">Dale J. Barnes</Link>
+                                    <Link to="#">Cao Nguyên</Link>
                                 </div>
                                 <div className="item date">
-                                    <Link to="#">05 Jan 2022</Link>
+                                    <Link to="#">05 Thg2 2022</Link>
                                 </div>
                                 <div className="item comments">
-                                    Comments (5)
+                                    Bình luận (5)
                                 </div>
                             </div>
                         </div>
                         <div className="post-content">
-                            <h1 className="post-title">Ultimate Digital Clean-Up Checklist Are You Prepared For New
-                                Year E-Commerce Platforms An Overview Most Common</h1>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                                voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-                                porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                                velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-                                magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-                                esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                                voluptas nulla pariatur</p>
+                            <h1 className="post-title">Tại sao vé hòa nhạc có thể là trường hợp sử dụng rộng rãi tiếp theo cho NFT?</h1>
+                            <p>Live Nation, một trong những công ty giải trí lớn nhất thế giới, đã tiết lộ rằng họ đang tìm hiểu cách các 
+                                mã thông báo không thể thay thế (NFT) có thể thúc đẩy sự tham gia của người dùng.
+                                Doanh nghiệp đã có một năm 2020 đầy cố gắng sau khi đại dịch coronavirus khiến các buổi hòa nhạc trên khắp 
+                                thế giới bị hoãn hoặc hủy bỏ - nhưng một sự trở lại lớn được dự đoán trong năm nay.
+                                Trong một buổi nói chuyện với các nhà đầu tư, Giám đốc điều hành của Live Nation, Michael Rapino tiết lộ 
+                                rằng ông có một “đội ngũ tuyệt vời” đang khám phá cách NFT có thể nâng cao trải nghiệm của khách hàng.
+                                Điều này có nghĩa là những món quà lưu niệm cuối cùng có thể được phát hành dưới dạng mã hóa, mang lại cho khán 
+                                giả những kỷ niệm lâu dài về những khoảnh khắc đặc biệt đã xảy ra trong một buổi biểu diễn.
+                                Ticketmaster, một trong những thương hiệu thuộc tập đoàn Live Nation, cũng đang chuẩn bị bắt đầu phát 
+                                hành vé dưới dạng NFT - một thứ có thể giúp giảm nạn hàng giả.</p>
                         </div>
                         <blockquote className="block-quote">
-                            <h4>Roll Out New Features Without Hurting Loyal Users Unicode Character Sets The
-                                Ultim An Overview UX Design Deliverables</h4>
-                            <div className="author">John B. Thomas</div>
+                            <h4>Tất cả chúng tôi đã học được từ Top Shot tại NBA. Vì vậy, chúng tôi xem một số khoảnh khắc của buổi hòa nhạc là những khoảnh khắc kỳ diệu mà chúng tôi có thể đúc kết và gắn vào các lễ hội bán vé đang diễn ra.</h4>
+                            <div className="author">Michael Rapino</div>
                         </blockquote>
                         <div className="post-content">
-                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                                adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-                                dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                                exercitationem ullam corporis suscipit laboriosam</p>
+                            <p>Tất cả những điều này cho thấy rằng âm nhạc có thể trở thành một trong những trường hợp sử dụng lớn tiếp theo 
+                                cho NFT khi sự bùng nổ của thị trường Crypto Art nguội dần.</p>
                         </div>
                     </article>
                     <div className="post-details">
                         <div className="details-left">
                             <div className="wg-title style-2">
-                                Popular Tags
+                                Nội Dung Phổ Biến
                             </div>
                             <div className="wg-tags style-2">
                                 <ul>
                                     <li className="active"><Link to="#">Crypto</Link></li>
                                     <li><Link to="#">Bitcoin</Link></li>
-                                    <li><Link to="#">ICO Landing</Link></li>
+                                    <li><Link to="#">NFT Music</Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="details-right">
                             <div className="wg-title style-2">
-                                Share Post
+                                Chia Sẻ Bài Viết
                             </div>
                             <div className="widget-social style-3">
                                 <ul>
@@ -231,14 +225,12 @@ const BlogDetails = () => {
                     </div>
                     <div className="post-author style-2">
                         <div className="avatar">
-                            <img src={avt} alt="Bidzen" />
+                            <img src={avt} alt="Only One" />
                         </div>
                         <div className="content">
-                            <h4><Link to="#">Herbert N. Johnson</Link></h4>
-                            <div className="job">Author</div>
-                            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                                molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-                                pariatur must explain to you how all this mistaken idea of denouncing</p>
+                            <h4><Link to="#">Cao Nguyên</Link></h4>
+                            <div className="job">Admin</div>
+                            <p>Thay vì mò kim trong đống rơm, bạn cứ mua cả đống rơm là được.</p>
                             <div className="widget-social style-4">
                                 <ul>
                                     <li><Link to="#" className="active"><i className="fab fa-facebook-f"></i></Link></li>
@@ -251,7 +243,7 @@ const BlogDetails = () => {
                     </div>
                     <div className="widget item widget-post style-2">
                         <div className="wg-title style-2">
-                            Related News
+                            Có Thể Bạn Cũng Thích
                         </div>
                         <ul className="post-new">
                             {
@@ -272,7 +264,7 @@ const BlogDetails = () => {
                     </div>
                     <div className="widget item wg-comments">
                         <div className="wg-title">
-                            People Comments
+                            Bình Luận
                         </div>
                         <ul>
                             {
@@ -280,13 +272,13 @@ const BlogDetails = () => {
                                     <li key={index} className={item.class}>
                                         <div className="post-author">
                                             <div className="avatar">
-                                                <img src={item.img} alt="Bidzen" />
+                                                <img src={item.img} alt="Only One" />
                                             </div>
                                             <div className="content">
                                                 <h4><Link to="#">{item.name}</Link></h4>
                                                 <div className="job">{item.time}</div>
                                                 <p>{item.text}</p>
-                                                <Link to="#" className="reply">Reply</Link>
+                                                <Link to="#" className="reply">Trả lời</Link>
                                             </div>
                                         </div>
                                     </li>
@@ -296,28 +288,28 @@ const BlogDetails = () => {
                     </div>
                     <div className="wg-post-comments">
                         <div className="wg-title">
-                            Leave a Reply
+                            Để lại Bình luận
                         </div>
-                        <div className="desc">We’re Ready to Help Your Buisness</div>
+                        <div className="desc">Đừng quên chia sẻ cảm nhận của bạn về nội dung vừa đọc</div>
                         <form action="#" method="GET" acceptCharset="utf-8" className="comment-form form-submit">
                             <div className="text-wrap clearfix">
                                 <fieldset className="name-wrap">
                                     <input type="text" id="name" className="tb-my-input" name="name" tabIndex="1"
-                                        placeholder="Full Name" size="32" aria-required="true"
+                                        placeholder="Tên của bạn" size="32" aria-required="true"
                                         required />
                                 </fieldset>
                                 <fieldset className="email-wrap">
                                     <input type="email" id="email" className="tb-my-input" name="email" tabIndex="2"
-                                        placeholder="Email Address" size="32"
+                                        placeholder="Địa chỉ Email" size="32"
                                         required />
                                 </fieldset>
                             </div>
                             <fieldset className="message-wrap">
                                 <textarea id="comment-message" name="message" tabIndex="4"
-                                    placeholder="Write Message" aria-required="true"></textarea>
+                                    placeholder="Nội dung bình luận" aria-required="true"></textarea>
                             </fieldset>
                             <button name="submit" type="submit" id="comment-reply"
-                                className="sc-button style letter style-2"><span>Send Reply</span> </button>
+                                className="sc-button style letter style-2"><span>Bình Luận</span> </button>
                         </form>
                     </div>
                 </div>
@@ -325,14 +317,14 @@ const BlogDetails = () => {
                     <aside className="side-bar">
                         <div className="widget wg-search">
                             <form action="#" method="get" role="search" className="search-form">
-                                <input type="search" className="search-field" placeholder="Search" name="s"
+                                <input type="search" className="search-field" placeholder="Tìm kiếm" name="s"
                                     title="Search for" required />
-                                <button className="search search-submit" type="submit" title="Search"></button>
+                                <button className="search search-submit" type="submit" title="Tìm kiếm"></button>
                             </form>
                         </div>
                         <div className="widget item wg-category">
                             <div className="wg-title">
-                                Category
+                                Danh Mục
                             </div>
                             <ul>
                                 {
@@ -344,7 +336,7 @@ const BlogDetails = () => {
                         </div>
                         <div className="widget item widget-post style-3">
                             <div className="wg-title">
-                                Recent News
+                                Bài Viết Mới
                             </div>
                             <ul className="post-new">
                                 {
@@ -365,7 +357,7 @@ const BlogDetails = () => {
                         </div>
                         <div className="widget item wg-tags">
                             <div className="wg-title">
-                                Popular Tags
+                                Nội Dung Phổ Biến
                             </div>
                             <ul>
                                 {

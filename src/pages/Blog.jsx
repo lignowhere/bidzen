@@ -16,12 +16,12 @@ const Blog = () => {
                 <div className="col-md-12">
                     <div className="page-title-inner flex">
                         <div className="page-title-heading">
-                            <h2 className="heading">New & Blogs</h2>
+                            <h2 className="heading">Tin tức & Blog</h2>
                         </div>
                         <div className="breadcrumbs">
                             <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li>News & Blogs</li>
+                                <li><Link to="/">Trang chủ</Link></li>
+                                <li>Blog</li>
                             </ul>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ const Blog = () => {
                         <div key={index} className="col-lg-4 col-md-6">
                             <article className="sc-card-article">
                                 <div className="card-media">
-                                    <Link to="/blog-details"><img src={item.img} alt="Bidzen" /></Link>
+                                    <Link to="/blog-details"><img src={item.img} alt="Only One" /></Link>
                                 </div>
                                 <div className="content">
                                     <div className="meta-info">
@@ -50,7 +50,7 @@ const Blog = () => {
                                         <h5><Link to="/blog-details">{item.title}</Link></h5>
                                     </div>
                                     <Link to="/blog-details"
-                                        className="sc-button btn-bordered-white style letter"><span>Read More</span></Link>
+                                        className="sc-button btn-bordered-white style letter"><span>Đọc Thêm</span></Link>
                                 </div>
                             </article>
                         </div>

@@ -6,24 +6,24 @@ import img4 from '../images/icon/icon-13.svg'
 const dataCreate = [
     {
         img: img1,
-        title: 'Set Up Your Wallet',
-        desc: 'Sed ut perspiciatis unde omnste natus error sit voluptatem'
+        title: 'Đăng Ký Tài Khoản',
+        desc: 'Đăng ký tài khoản Only One bằng email hoặc tài khoản mạng xã hội'
     },
     {
         img: img2,
-        title: 'Create Your Collection',
-        desc: 'Sed ut perspiciatis unde omnste natus error sit voluptatem'
+        title: 'Tạo Bộ Sưu Tập',
+        desc: 'Nhấp vào Bộ sưu tập của tôi và thiết lập bộ sưu tập cùng thông tin của bạn'
     },
     {
         img: img3,
-        title: 'Add Your NFTs',
-        desc: 'Sed ut perspiciatis unde omnste natus error sit voluptatem',
+        title: 'Đúc NFT',
+        desc: 'Tải file NFT của bạn (ảnh, video, audio hoặc 3D) và điền thông tin',
         class:'mg-bt-0'
     },
     {
         img: img4,
-        title: 'List Them For Sale',
-        desc: 'Sed ut perspiciatis unde omnste natus error sit voluptatem',
+        title: 'Đăng Bán NFT',
+        desc: 'Chọn cách bạn muốn bán NFT của mình và chúng tôi sẽ giúp bạn bán chúng',
         class:'mg-bt-0'
     },  
 ]

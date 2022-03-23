@@ -2,7 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Countdown from "react-countdown";
 import { Dropdown } from 'react-bootstrap';
-
+const renderer = ({ hours, minutes, seconds }) => 
+        <span>
+          {hours}:{minutes}:{seconds}
+        </span>
+     
 const TopBar = () => {
   return    <div className="topbar">
                 <div className="container">
@@ -20,10 +24,10 @@ const TopBar = () => {
                                             <span>Ethereum</span>
                                         </Dropdown.Item>
                                         <Dropdown.Item href="#">
-                                            <span>Bitski</span>
+                                            <span>BSC</span>
                                         </Dropdown.Item>
                                         <Dropdown.Item href="#">
-                                            <span>Fortmatic</span>
+                                            <span>Polygon</span>
                                         </Dropdown.Item>
 
                                         </Dropdown.Menu>
@@ -34,19 +38,17 @@ const TopBar = () => {
                                 <div id="english" className="dropdown">
                                     <Dropdown>
                                         <Dropdown.Toggle className="btn-selector nolink" id="dropdown-basic">
-                                            <span>English</span>
+                                            <span>Tiếng Việt</span>
                                         </Dropdown.Toggle>
 
                                         <Dropdown.Menu>
                                         <Dropdown.Item href="#">
+                                            <span>Tiếng Việt</span>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="#">
                                             <span>English</span>
                                         </Dropdown.Item>
-                                        <Dropdown.Item href="#">
-                                            <span>USA</span>
-                                        </Dropdown.Item>
-                                        <Dropdown.Item href="#">
-                                            <span>France</span>
-                                        </Dropdown.Item>
+                                        
 
                                         </Dropdown.Menu>
                                     </Dropdown>
@@ -54,11 +56,9 @@ const TopBar = () => {
                             </div>
                         </div>
                         <div className="topbar-right flex">
-                            <span>New Product Coming Soon</span>
+                            <span>Sản phẩm mới sắp ra mắt</span>
                             <div className="countdown">
-                                <Countdown date={Date.now() + 500000000}>
-                                    <span>You are good to go!</span>
-                                </Countdown>
+                            <Countdown date={Date.now() + 50000000} renderer={renderer} />
                             </div>
                             <ul className="socical-icon flex">
                                 <li><Link to="#" className="active"><i className="fab fa-facebook-f"></i></Link></li>
